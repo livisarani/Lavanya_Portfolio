@@ -259,6 +259,21 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         ],
       },
       {
+        id: "cert-linkedin-cloud",
+        period: "Sep 2026",
+        location: "LinkedIn Learning",
+        type: "Professional Certificate",
+        role: "Cloud Strategy Professional Certificate",
+        organization: "LinkedIn Learning",
+        badge: "9 Courses • 12h 18m",
+        summary:
+          "Completed the 9-course Cloud Strategy learning path (12 hours 18 minutes) and passed the final certification exam.",
+        highlights: [
+          "Skills Covered: Enterprise Architecture, Cloud Administration, Cloud Security, Sustainable Systems, and Cloud Strategy.",
+          "Certificate ID: 4b03c4e7a0d67bb90b8407cc079a4b72f2d63b9ee56207369f2de8263fe92b4",
+        ],
+      },
+      {
         id: "cert-english",
         period: "10 Weeks",
         location: "Sri Lanka",

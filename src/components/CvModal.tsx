@@ -271,10 +271,27 @@ export default function CvModal() {
                 <h2 className="font-headline-sm text-headline-sm text-primary font-bold uppercase tracking-wider border-b-2 border-primary pb-1 mb-space-sm">
                   Certifications
                 </h2>
-                <p className="font-body-sm text-body-sm text-on-surface-variant">
-                  Intermediate English Course – Issuer: Kekirawa English Academy
-                  | Duration: 10 weeks
-                </p>
+                <ul className="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant list-disc pl-5">
+                  <li>
+                    <strong className="text-primary">
+                      Cloud Strategy Professional Certificate
+                    </strong>{" "}
+                    – Issuer: LinkedIn Learning | Completed: September 9, 2026
+                    (9 courses • 12 hours 18 minutes • Passed final exam)
+                    <br />
+                    <span className="text-xs">
+                      Skills Covered: Enterprise Architecture, Cloud
+                      Administration, Cloud Security, Sustainable Systems, Cloud
+                      Strategy
+                    </span>
+                  </li>
+                  <li>
+                    <strong className="text-primary">
+                      Intermediate English Course
+                    </strong>{" "}
+                    – Issuer: Kekirawa English Academy | Duration: 10 weeks
+                  </li>
+                </ul>
               </div>
 
               <div>
