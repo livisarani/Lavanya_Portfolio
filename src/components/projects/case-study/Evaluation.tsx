@@ -9,38 +9,35 @@ export default function Evaluation({
   if (!evaluation) return null;
 
   return (
-    <section className="w-full py-space-2xl bg-surface-container-low border-b border-surface-container">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        <div className="flex items-center gap-space-sm mb-space-xs">
-          <span className="h-px w-8 bg-secondary" />
-          <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-            07 / Empirical Evaluation
-          </span>
-        </div>
-        <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-space-xl">
+    <section className="w-full py-20 border-b border-border bg-surface-elevated">
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+        <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+          07 / Empirical Evaluation
+        </span>
+        <p className="text-[15px] leading-[27px] font-light text-muted-foreground max-w-2xl mb-10">
           {evaluation.summary}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {evaluation.metrics.map((m, idx) => (
             <div
               key={idx}
-              className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col"
+              className="p-8 border border-border bg-background flex flex-col"
             >
-              <div className="flex items-center justify-between mb-space-xs">
-                <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <span className="text-[11px] uppercase tracking-[1.38px] text-muted-foreground">
                   {m.label}
                 </span>
                 {m.delta && (
-                  <span className="px-2 py-0.5 rounded bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                  <span className="text-[11px] uppercase tracking-[1.2px] text-primary font-medium">
                     {m.delta}
                   </span>
                 )}
               </div>
-              <span className="font-headline-lg text-headline-lg text-primary font-bold font-mono">
+              <span className="font-display text-[36px] text-foreground leading-tight">
                 {m.value}
               </span>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              <p className="text-[14px] leading-[24px] font-light text-muted-foreground mt-3">
                 {m.description}
               </p>
             </div>

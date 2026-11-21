@@ -1,52 +1,78 @@
+"use client";
+
 import React from "react";
 import { portfolioData } from "@/data/portfolio";
+import { triggerCvViewAndDownload } from "./CvModal";
 
 export default function About() {
   const { identity, about } = portfolioData;
 
   return (
     <section
-      className="w-full py-space-3xl bg-surface-container-lowest shadow-[0_4px_30px_rgba(6,59,99,0.03)]"
       id="about"
+      className="w-full bg-background py-24 md:py-32 border-b border-border"
     >
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        {/* Section Label Header */}
-        <div className="flex items-center gap-space-sm mb-space-sm">
-          <span className="h-px w-8 bg-secondary" />
-          <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-            {about.sectionLabel}
-          </span>
-        </div>
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px] space-y-24 md:space-y-32">
+        {/* Row 1: Asymmetric Editorial Split (Portrait Left / Story Right — matches region-r2-context.jpg) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="lg:col-span-6">
+            <div className="w-full aspect-[3/4] max-h-[680px] overflow-hidden border border-border bg-surface-elevated">
+              <img
+                src={about.profileCard.portraitUrl}
+                alt={identity.name}
+                className="w-full h-full object-cover object-center transition-opacity duration-700"
+              />
+            </div>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
-          {/* Left 7 Columns: Story & Technical Values */}
-          <div className="lg:col-span-7 flex flex-col">
-            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight mb-space-lg">
+          <div className="lg:col-span-6 flex flex-col items-start">
+            <span className="text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-5">
+              {about.sectionLabel}
+            </span>
+
+            <h2 className="font-display text-[34px] md:text-[43.6px] leading-[1.2] text-foreground mb-7">
               {about.headline}
             </h2>
 
-            <div className="space-y-space-md font-body-md text-body-md text-on-surface-variant">
+            <div className="space-y-5 text-[15.136px] leading-[27.24px] font-light text-foreground/85 max-w-xl mb-10">
               {about.paragraphs.map((p, idx) => (
                 <p key={idx}>{p}</p>
               ))}
             </div>
 
-            {/* Technical Values Matrix */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xl">
+            <button
+              type="button"
+              onClick={triggerCvViewAndDownload}
+              className="btn-editorial-outline-sm"
+            >
+              <span>View Resume &amp; CV</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Row 2: Reversed Split (Quick Facts & Core Values Left / Code Window Right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start pt-8 border-t border-border">
+          <div className="lg:col-span-7 flex flex-col">
+            <span className="text-[12px] font-medium uppercase tracking-[1.44px] text-muted-foreground mb-6">
+              Engineering Principles &amp; Profile
+            </span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
               {about.values.map((val) => (
                 <div
                   key={val.title}
-                  className="p-space-md rounded-lg bg-surface-container-low flex flex-col hover:bg-surface-container transition-colors"
+                  className="p-6 border border-border bg-background hover:border-primary/60 transition-colors duration-500 ease-editorial"
                 >
-                  <div className="flex items-center gap-space-xs text-primary mb-1">
-                    <span className="material-symbols-outlined text-secondary">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="material-symbols-outlined text-primary text-lg">
                       {val.icon}
                     </span>
-                    <span className="font-headline-sm text-headline-sm font-semibold">
+                    <h3 className="font-display text-[22px] text-foreground">
                       {val.title}
-                    </span>
+                    </h3>
                   </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  <p className="text-[14px] leading-[24px] font-light text-muted-foreground">
                     {val.description}
                   </p>
                 </div>
@@ -54,47 +80,31 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right 5 Columns: Visual Profile & Quick Facts Cluster */}
-          <div className="lg:col-span-5 flex flex-col gap-space-lg">
-            {/* Profile Card */}
-            <div className="rounded-xl overflow-hidden bg-surface-container-low shadow-[0_12px_32px_rgba(6,59,99,0.06)] p-space-lg flex flex-col">
-              <div className="flex items-center gap-space-md mb-space-md">
-                <img
-                  alt={identity.name}
-                  className="w-20 h-20 rounded-xl object-cover shadow-sm"
-                  src={about.profileCard.portraitUrl}
-                />
-                <div className="flex flex-col">
-                  <span className="font-headline-sm text-headline-sm text-primary font-bold">
-                    {identity.name}
-                  </span>
-                  <span className="font-label-sm text-label-sm text-secondary font-medium tracking-wide">
-                    {about.profileCard.roleTag}
-                  </span>
-                  <span className="font-label-sm text-label-sm text-on-surface-variant mt-1">
-                    {identity.location} ({identity.timezone})
-                  </span>
-                </div>
+          <div className="lg:col-span-5 flex flex-col gap-8">
+            {/* Quick Facts Hairline Table */}
+            <div className="border border-border p-8 bg-surface-elevated">
+              <div className="pb-4 mb-4 border-b border-border flex items-baseline justify-between">
+                <span className="font-display text-[24px] text-foreground">
+                  {identity.name}
+                </span>
+                <span className="text-[11px] uppercase tracking-[1.38px] text-primary">
+                  {identity.timezone}
+                </span>
               </div>
-
-              <div className="space-y-space-sm pt-space-xs font-label-md text-label-md">
-                {about.profileCard.quickFacts.map((fact, idx) => (
+              <div className="space-y-3 text-[13px]">
+                {about.profileCard.quickFacts.map((fact) => (
                   <div
                     key={fact.label}
-                    className={`flex justify-between py-1 ${
-                      idx < about.profileCard.quickFacts.length - 1
-                        ? "border-b border-surface-container"
-                        : ""
-                    }`}
+                    className="flex justify-between gap-4 py-2 border-b border-border/60 last:border-b-0"
                   >
-                    <span className="text-on-surface-variant">
+                    <span className="text-muted-foreground uppercase tracking-[1.2px] text-[11px] font-medium">
                       {fact.label}
                     </span>
                     <span
                       className={
                         fact.highlight
-                          ? "text-secondary font-semibold"
-                          : "text-primary font-medium"
+                          ? "text-primary font-medium text-right"
+                          : "text-foreground font-light text-right"
                       }
                     >
                       {fact.value}
@@ -104,32 +114,18 @@ export default function About() {
               </div>
             </div>
 
-            {/* Quick Code Snippet Window */}
-            <div className="rounded-xl bg-primary text-on-primary p-space-md shadow-md flex flex-col">
-              <div className="flex items-center justify-between pb-space-xs text-on-primary-container font-label-sm text-label-sm">
-                <span>{about.codeSnippet.filename}</span>
-                <span className="text-secondary-fixed">
+            {/* Editorial Code Block */}
+            <div className="border border-border bg-surface-elevated p-6">
+              <div className="flex items-center justify-between pb-3 mb-3 border-b border-border text-[11px] uppercase tracking-[1.44px]">
+                <span className="text-foreground font-semibold">
+                  {about.codeSnippet.filename}
+                </span>
+                <span className="text-primary">
                   {about.codeSnippet.language}
                 </span>
               </div>
-              <pre className="font-label-sm text-label-sm overflow-x-auto text-surface-container-high py-space-xs">
-                <code>
-                  <span className="text-secondary-fixed">async def</span>{" "}
-                  <span className="text-primary-fixed">
-                    synthesize_citation
-                  </span>
-                  (ctx, query):
-                  {"\n"}
-                  {"    "}dense_vec ={" "}
-                  <span className="text-secondary-fixed">await</span>{" "}
-                  embed(query)
-                  {"\n"}
-                  {"    "}graph_nodes = ctx.traversal(dense_vec, depth=2)
-                  {"\n"}
-                  {"    "}
-                  <span className="text-secondary-fixed">return</span>{" "}
-                  verify_grounding(graph_nodes)
-                </code>
+              <pre className="text-[12px] leading-[21.6px] font-mono text-foreground/85 overflow-x-auto">
+                <code>{about.codeSnippet.code}</code>
               </pre>
             </div>
           </div>

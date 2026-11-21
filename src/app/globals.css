@@ -1,89 +1,174 @@
+@import "./fonts.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-muted-foreground: #808080;
+  --color-primary: #e1a87a;
+  --color-on-primary: #111111;
+  --color-border: #2e2e2e;
+  --content-width: 1354px;
+}
 
 @layer base {
   html,
   body {
     margin: 0;
     padding: 0;
-  }
-  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 15.136px;
+    line-height: 27.2448px;
     overscroll-behavior: none;
   }
-  main > :first-child {
-    margin-top: 0 !important;
+
+  h1,
+  h2,
+  h3 {
+    font-family: "orpheus-pro", "Cormorant Garamond", "Playfair Display", Georgia,
+      serif;
+    font-weight: 400;
   }
-  main > :last-child {
-    margin-bottom: 0 !important;
+
+  ::selection {
+    background-color: #e1a87a;
+    color: #111111;
   }
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+@layer components {
+  /* Editorial Primary Outlined Button (.button-outline-2 from design pack) */
+  .btn-editorial-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 64px;
+    padding: 18px 42px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #e1a87a;
+    border-radius: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20.7px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear,
+      border-color 0.15s linear;
+  }
 
-@keyframes pulse-wave {
-  0% {
-    stroke-dashoffset: 600;
+  .btn-editorial-outline:hover {
+    background-color: #e1a87a;
+    color: #111111;
   }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 
-@keyframes pulse-dot {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.9;
+  .btn-editorial-outline:focus-visible {
+    outline: 1px solid #e1a87a;
+    outline-offset: 4px;
   }
-  50% {
-    transform: scale(1.45);
-    opacity: 0.4;
-  }
-}
 
-@keyframes radar-ping {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.8;
+  /* Compact Editorial Outline Button */
+  .btn-editorial-outline-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #e1a87a;
+    border-radius: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 1.38px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear;
   }
-  70% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-}
 
-@keyframes shimmer-sweep {
-  0% {
-    transform: translateX(-100%);
+  .btn-editorial-outline-sm:hover {
+    background-color: #e1a87a;
+    color: #111111;
   }
-  100% {
-    transform: translateX(100%);
+
+  /* Editorial Ghost Link / Button */
+  .btn-editorial-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.15s linear;
   }
-}
 
-.wave-stream-line {
-  stroke-dasharray: 8 4;
-  animation: wave-dash 24s linear infinite;
-}
+  .btn-editorial-ghost:hover {
+    opacity: 0.6;
+  }
 
-@keyframes wave-dash {
-  to {
-    stroke-dashoffset: -300;
+  /* Editorial Underlined Accent Link (.link-underlined-accent-2) */
+  .link-editorial-accent {
+    color: #e1a87a;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21.6px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    cursor: pointer;
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .link-editorial-accent:hover {
+    color: #ffffff;
+  }
+
+  /* Outlined List Card (.list-item-outlined from design pack) */
+  .card-editorial-outlined {
+    background-color: #000000;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 5px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0px;
+    transition: border-color 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+      transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card-editorial-outlined:hover {
+    border-left-color: #e1a87a;
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .wave-stream-line,
-  .animate-ping,
-  .radar-beacon,
-  .wave-live-pulse {
-    animation: none !important;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

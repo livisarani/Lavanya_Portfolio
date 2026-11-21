@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -25,7 +25,7 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600&family=Sora:wght@500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
         <link
@@ -33,11 +33,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+      <body className="bg-background font-sans text-foreground antialiased selection:bg-primary selection:text-on-primary">
         <Header />
-        <main className="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]">
-          {children}
-        </main>
+        <main className="w-full bg-background min-h-screen">{children}</main>
         <Footer />
         <CvModal />
       </body>

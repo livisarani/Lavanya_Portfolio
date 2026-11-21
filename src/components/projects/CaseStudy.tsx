@@ -13,7 +13,7 @@ import FutureWork from "./case-study/FutureWork";
 
 export default function CaseStudy({ project }: { project: ProjectCaseStudy }) {
   return (
-    <article className="w-full bg-surface">
+    <article className="w-full bg-background pt-[86px]">
       <CaseStudyHero project={project} />
       <Overview project={project} />
       <Objectives objectives={project.objectives} />
@@ -24,15 +24,12 @@ export default function CaseStudy({ project }: { project: ProjectCaseStudy }) {
       <Evaluation evaluation={project.evaluation} />
 
       {(project.learnings?.length || project.futureWork?.length) && (
-        <section className="w-full py-space-2xl">
-          <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-            <div className="flex items-center gap-space-sm mb-space-md">
-              <span className="h-px w-8 bg-secondary" />
-              <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-                08 / Reflections & Roadmap
-              </span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+        <section className="w-full py-20 border-b border-border">
+          <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+            <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-8">
+              08 / Reflections &amp; Roadmap
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Learnings learnings={project.learnings} />
               <FutureWork futureWork={project.futureWork} />
             </div>

@@ -5,63 +5,69 @@ export default function Skills() {
   const { skills } = portfolioData;
 
   return (
-    <section className="w-full py-space-3xl" id="skills">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        {/* Section Header */}
-        <div className="flex flex-col mb-space-2xl">
-          <div className="flex items-center gap-space-sm mb-space-xs">
-            <span className="h-px w-8 bg-secondary" />
-            <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-              {skills.sectionLabel}
-            </span>
-          </div>
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
-            {skills.headline}
+    <section
+      id="skills"
+      className="w-full bg-background py-24 md:py-32 border-b border-border"
+    >
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+        {/* Centered Editorial Heading (matches "Everything Squarespace." band) */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+            {skills.sectionLabel}
+          </span>
+          <h2 className="font-display text-[36px] md:text-[52px] leading-[1.15] text-foreground mb-5">
+            {skills.headline}.
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
+          <p className="text-[15.136px] leading-[27.24px] font-light text-muted-foreground">
             {skills.description}
           </p>
         </div>
 
-        {/* 6 Technical Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
-          {skills.categories.map((cat) => (
-            <div
-              key={cat.id}
-              className="rounded-xl bg-surface-container-lowest p-space-lg shadow-[0_8px_24px_rgba(6,59,99,0.04)] flex flex-col hover:-translate-y-1 transition-all"
-            >
-              <div className="flex items-center gap-space-sm mb-space-md">
-                <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">
-                    {cat.icon}
-                  </span>
-                </div>
+        {/* Signature 3x2 Outlined Grid (.list-item-outlined with 5px left border) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {skills.categories.map((cat) => {
+            const highlightedSkills = cat.skills
+              .filter((s) => s.highlighted)
+              .map((s) => s.name);
+
+            return (
+              <div
+                key={cat.id}
+                className="card-editorial-outlined p-8 md:p-[42px] flex flex-col justify-between min-h-[260px]"
+              >
                 <div>
-                  <h3 className="font-headline-sm text-headline-sm text-primary font-semibold">
+                  <h3 className="font-display text-[28px] md:text-[32px] leading-[1.2] text-foreground mb-2">
                     {cat.title}
                   </h3>
-                  <span className="font-label-sm text-label-sm text-secondary">
+                  <p className="text-[12px] uppercase tracking-[1.38px] text-muted-foreground mb-5">
                     {cat.subtitle}
-                  </span>
+                  </p>
+
+                  <p className="text-[14.5px] leading-[26px] font-light text-foreground/80 mb-8">
+                    {cat.skills.map((s) => s.name).join(" · ")}
+                  </p>
+                </div>
+
+                {/* Bottom Ghost Primary Accent Label (.button-ghost-primary-sm) */}
+                <div className="pt-4 border-t border-border/70 flex flex-wrap items-center gap-x-4 gap-y-1">
+                  {highlightedSkills.length > 0 ? (
+                    highlightedSkills.map((name) => (
+                      <span
+                        key={name}
+                        className="text-[11.5px] font-semibold uppercase tracking-[1.44px] text-primary"
+                      >
+                        {name}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="text-[11.5px] font-semibold uppercase tracking-[1.44px] text-primary">
+                      {cat.skills[0]?.name}
+                    </span>
+                  )}
                 </div>
               </div>
-
-              <div className="flex flex-wrap gap-2">
-                {cat.skills.map((skill) => (
-                  <span
-                    key={skill.name}
-                    className={
-                      skill.highlighted
-                        ? "px-space-sm py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-md text-label-md font-semibold"
-                        : "px-space-sm py-1 rounded bg-surface-container-low text-primary font-label-md text-label-md"
-                    }
-                  >
-                    {skill.name}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

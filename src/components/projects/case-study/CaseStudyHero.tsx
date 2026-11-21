@@ -8,53 +8,51 @@ export default function CaseStudyHero({
   project: ProjectCaseStudy;
 }) {
   return (
-    <section className="relative w-full overflow-hidden py-space-2xl bg-surface-container-low border-b border-surface-container">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+    <section className="w-full py-16 md:py-24 bg-background border-b border-border">
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors mb-space-lg"
+          className="inline-flex items-center gap-2 text-[11.5px] font-medium uppercase tracking-[1.38px] text-primary hover:text-foreground transition-colors mb-10"
         >
-          <span className="material-symbols-outlined text-base">
-            arrow_back
-          </span>
-          <span>Back to All Architectures</span>
+          <span aria-hidden="true">←</span>
+          <span>Back to All Projects</span>
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-          <div className="lg:col-span-7 flex flex-col">
-            <div className="flex flex-wrap items-center gap-space-sm mb-space-sm font-label-sm text-label-sm">
-              <span className="px-space-sm py-0.5 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-bold uppercase tracking-wider">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-7 flex flex-col items-start">
+            <div className="flex flex-wrap items-center gap-3 mb-5 text-[11.5px] uppercase tracking-[1.44px]">
+              <span className="text-primary font-semibold">
                 {project.category}
               </span>
-              <span className="text-on-surface-variant">•</span>
-              <span className="text-on-surface-variant">{project.status}</span>
+              <span className="text-border">/</span>
+              <span className="text-muted-foreground">{project.status}</span>
             </div>
 
-            <h1 className="font-display text-display-mobile md:text-headline-lg text-primary tracking-tight mb-space-md">
+            <h1 className="font-display text-[38px] md:text-[56px] leading-[1.12] text-foreground mb-6">
               {project.title}
             </h1>
 
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
+            <p className="text-[15.5px] leading-[28px] font-light text-foreground/85 mb-8 max-w-2xl">
               {project.overview?.summary || project.solution}
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-space-lg">
+            <div className="flex flex-wrap gap-2 mb-10">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md shadow-xs"
+                  className="px-3 py-1.5 border border-border text-[11px] uppercase tracking-[1.3px] text-foreground/80"
                 >
                   {tech}
                 </span>
               ))}
             </div>
 
-            <div className="flex flex-wrap items-center gap-space-md">
-              <div className="px-space-md py-space-sm rounded-lg bg-surface-container-lowest border border-secondary/20 flex items-baseline gap-space-xs">
-                <span className="font-headline-sm text-headline-sm font-bold text-secondary">
+            <div className="flex flex-wrap items-center gap-6">
+              <div className="px-5 py-3 border border-border bg-surface-elevated flex items-baseline gap-3">
+                <span className="font-display text-[24px] text-primary">
                   {project.metric.value}
                 </span>
-                <span className="font-label-sm text-label-sm text-on-surface-variant">
+                <span className="text-[12px] text-muted-foreground font-light">
                   {project.metric.label}
                 </span>
               </div>
@@ -64,27 +62,27 @@ export default function CaseStudyHero({
                   href={project.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary text-on-primary hover:bg-tertiary transition-colors font-label-lg text-label-lg"
+                  className="btn-editorial-outline-sm"
                 >
-                  <span className="material-symbols-outlined text-base">
-                    code
-                  </span>
                   <span>View Source on GitHub</span>
+                  <span aria-hidden="true">↗</span>
                 </a>
               )}
             </div>
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-xl overflow-hidden bg-primary p-space-md shadow-xl text-on-primary">
+            <div className="border border-border bg-surface-elevated">
               <img
                 src={project.previewImage}
                 alt={project.previewAlt}
-                className="w-full h-56 object-cover rounded-lg mb-space-sm"
+                className="w-full aspect-[16/11] object-cover"
               />
-              <div className="flex justify-between items-center text-on-primary-container font-label-sm text-label-sm">
-                <span>{project.previewMetaLeft}</span>
-                <span className="text-secondary-fixed">
+              <div className="px-5 py-4 border-t border-border flex justify-between items-center text-[11px] uppercase tracking-[1.38px]">
+                <span className="text-muted-foreground">
+                  {project.previewMetaLeft}
+                </span>
+                <span className="text-primary font-medium">
                   {project.previewMetaRight}
                 </span>
               </div>

@@ -9,33 +9,30 @@ export default function Architecture({
   if (!architecture) return null;
 
   return (
-    <section className="w-full py-space-2xl border-b border-surface-container">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        <div className="flex items-center gap-space-sm mb-space-xs">
-          <span className="h-px w-8 bg-secondary" />
-          <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-            04 / System Architecture
-          </span>
-        </div>
-        <p className="font-body-md text-body-md text-on-surface-variant max-w-3xl mb-space-xl">
+    <section className="w-full py-20 border-b border-border">
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+        <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+          04 / System Architecture
+        </span>
+        <p className="text-[15px] leading-[27px] font-light text-muted-foreground max-w-3xl mb-10">
           {architecture.summary}
         </p>
 
-        <div className="space-y-space-md">
+        <div className="space-y-4">
           {architecture.layers.map((layer, idx) => (
             <div
               key={idx}
-              className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm border-l-4 border-secondary flex flex-col md:flex-row md:items-center justify-between gap-space-md"
+              className="card-editorial-outlined p-7 flex flex-col md:flex-row md:items-center justify-between gap-6"
             >
               <div className="max-w-2xl">
-                <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
+                <h3 className="font-display text-[24px] text-foreground">
                   {layer.name}
                 </h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                <p className="text-[14px] leading-[24px] font-light text-muted-foreground mt-2">
                   {layer.description}
                 </p>
               </div>
-              <div className="px-space-md py-space-xs rounded-lg bg-surface-container font-label-sm text-label-sm text-primary font-semibold whitespace-nowrap self-start md:self-center">
+              <div className="px-4 py-2 border border-border text-[11px] uppercase tracking-[1.38px] text-primary font-medium whitespace-nowrap self-start md:self-center">
                 {layer.tech}
               </div>
             </div>

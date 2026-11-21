@@ -16,8 +16,8 @@ export default function Filters({
   totalCount,
 }: FiltersProps) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-space-md mb-space-xl">
-      <div className="flex flex-wrap items-center gap-space-xs">
+    <div className="flex flex-wrap items-center justify-between gap-4 pb-8 mb-14 border-b border-border">
+      <div className="flex flex-wrap items-center gap-3">
         {categories.map((cat) => {
           const isActive = activeCategory === cat;
           return (
@@ -27,8 +27,8 @@ export default function Filters({
               onClick={() => onSelectCategory(cat)}
               className={
                 isActive
-                  ? "px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all"
-                  : "px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container font-label-md text-label-md transition-all"
+                  ? "px-5 py-2.5 bg-primary text-on-primary border border-primary text-[11.5px] font-semibold uppercase tracking-[1.38px] transition-colors duration-200"
+                  : "px-5 py-2.5 bg-transparent text-foreground/80 border border-border hover:border-primary hover:text-primary text-[11.5px] font-medium uppercase tracking-[1.38px] transition-colors duration-200"
               }
             >
               {cat}
@@ -36,9 +36,8 @@ export default function Filters({
           );
         })}
       </div>
-      <span className="font-label-sm text-label-sm text-on-surface-variant">
-        Showing <strong className="text-primary">{totalCount}</strong> modular{" "}
-        {totalCount === 1 ? "architecture" : "architectures"}
+      <span className="text-[11.5px] uppercase tracking-[1.38px] text-muted-foreground">
+        {totalCount} {totalCount === 1 ? "Project" : "Projects"}
       </span>
     </div>
   );

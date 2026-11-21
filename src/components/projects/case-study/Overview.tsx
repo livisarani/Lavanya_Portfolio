@@ -3,63 +3,66 @@ import { ProjectCaseStudy } from "@/data/case-studies";
 
 export default function Overview({ project }: { project: ProjectCaseStudy }) {
   return (
-    <section className="w-full py-space-2xl border-b border-surface-container">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        <div className="flex items-center gap-space-sm mb-space-md">
-          <span className="h-px w-8 bg-secondary" />
-          <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-            01 / Executive Overview
-          </span>
-        </div>
+    <section className="w-full py-20 border-b border-border">
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+        <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-8">
+          01 / Executive Overview
+        </span>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
-          <div className="lg:col-span-7 space-y-space-md">
-            <div className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
-              <h3 className="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-7 space-y-6">
+            <div className="p-8 border border-border bg-surface-elevated">
+              <h3 className="font-display text-[26px] text-foreground mb-3">
                 The Problem
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">
+              <p className="text-[15px] leading-[27px] font-light text-foreground/80">
                 {project.problem}
               </p>
             </div>
-            <div className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
-              <h3 className="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">
+            <div className="p-8 border border-border bg-surface-elevated">
+              <h3 className="font-display text-[26px] text-foreground mb-3">
                 The Architectural Solution
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">
+              <p className="text-[15px] leading-[27px] font-light text-foreground/80">
                 {project.solution}
               </p>
             </div>
           </div>
 
           {project.overview && (
-            <div className="lg:col-span-5 p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between">
-              <div className="space-y-space-sm mb-space-md font-label-md text-label-md">
-                <div className="flex justify-between py-1 border-b border-surface-container">
-                  <span className="text-on-surface-variant">Role</span>
-                  <span className="text-primary font-semibold">
+            <div className="lg:col-span-5 p-8 border border-border bg-background flex flex-col justify-between">
+              <div className="space-y-3 mb-8 text-[13px]">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground uppercase tracking-[1.2px] text-[11px]">
+                    Role
+                  </span>
+                  <span className="text-foreground font-medium">
                     {project.overview.role}
                   </span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-surface-container">
-                  <span className="text-on-surface-variant">Timeline</span>
-                  <span className="text-primary font-semibold">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground uppercase tracking-[1.2px] text-[11px]">
+                    Timeline
+                  </span>
+                  <span className="text-foreground font-medium">
                     {project.overview.duration}
                   </span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-surface-container">
-                  <span className="text-on-surface-variant">Status</span>
-                  <span className="text-secondary font-semibold">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground uppercase tracking-[1.2px] text-[11px]">
+                    Status
+                  </span>
+                  <span className="text-primary font-medium">
                     {project.overview.status}
                   </span>
                 </div>
               </div>
 
               <div>
-                <h4 className="font-label-md text-label-md text-primary uppercase tracking-wider mb-space-xs font-semibold">
+                <h4 className="text-[11px] uppercase tracking-[1.44px] text-primary font-semibold mb-3">
                   Key Highlights
                 </h4>
-                <ul className="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant list-disc pl-4">
+                <ul className="space-y-2 text-[14px] leading-[24px] font-light text-foreground/80 list-disc pl-5">
                   {project.overview.highlights.map((h, i) => (
                     <li key={i}>{h}</li>
                   ))}

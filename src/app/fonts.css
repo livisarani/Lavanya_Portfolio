@@ -1,0 +1,628 @@
+/* Observed font sources; font binaries are not bundled. Use sources only where reuse is permitted.
+   Prefer licensed local copies for production. See FONTS.md for substitutions and verification. */
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/2baa0b/00000000000000007735ebd5/31/l?subset_id=2&fvd=n4&v=3"), url("https://use.typekit.net/af/2baa0b/00000000000000007735ebd5/31/d?subset_id=2&fvd=n4&v=3"), url("https://use.typekit.net/af/2baa0b/00000000000000007735ebd5/31/a?subset_id=2&fvd=n4&v=3");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/ab0afa/00000000000000007735ebd8/31/l?subset_id=2&fvd=n5&v=3"), url("https://use.typekit.net/af/ab0afa/00000000000000007735ebd8/31/d?subset_id=2&fvd=n5&v=3"), url("https://use.typekit.net/af/ab0afa/00000000000000007735ebd8/31/a?subset_id=2&fvd=n5&v=3");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/64ac83/00000000000000007735ebd7/31/l?subset_id=2&fvd=n7&v=3"), url("https://use.typekit.net/af/64ac83/00000000000000007735ebd7/31/d?subset_id=2&fvd=n7&v=3"), url("https://use.typekit.net/af/64ac83/00000000000000007735ebd7/31/a?subset_id=2&fvd=n7&v=3");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/1b6cd4/00000000000000007735ebd6/31/l?subset_id=2&fvd=i4&v=3"), url("https://use.typekit.net/af/1b6cd4/00000000000000007735ebd6/31/d?subset_id=2&fvd=i4&v=3"), url("https://use.typekit.net/af/1b6cd4/00000000000000007735ebd6/31/a?subset_id=2&fvd=i4&v=3");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/2baa0b/00000000000000007735ebd5/31/l?subset_id=2&fvd=n4&v=3");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/ab0afa/00000000000000007735ebd8/31/l?subset_id=2&fvd=n5&v=3");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/64ac83/00000000000000007735ebd7/31/l?subset_id=2&fvd=n7&v=3");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "orpheus-pro";
+  src: url("https://use.typekit.net/af/1b6cd4/00000000000000007735ebd6/31/l?subset_id=2&fvd=i4&v=3");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/7a2a42cb-3ddf-4c22-8ec2-e263cbab990a/latin.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/bb7271ab-ddab-4f75-92ca-30486930e59f/devanagari.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/24961341-1b80-47d9-b3b8-b1fe4124c9a1/latin-ext.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/26f34299-4a42-4ab5-bfb7-5bd4a602017d/latin.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/3fcf54ef-2a6a-44ab-ac6b-6049013913ea/latin-ext.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/59a0ac4b-73e3-4065-8317-9fa5c5d3dd6a/devanagari.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/ea875279-d663-4261-b690-7ed00c65ccb1/latin-ext.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/2f156972-5ae9-401b-8fd5-29a0fc4e4742/devanagari.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e1217d90-e3f1-4318-af30-972ddbb752f6/latin.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/95402d3d-cf4f-4ff3-b652-fa1bddbe79de/latin.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/31f2dfaf-de1e-40ab-ac18-8641e6ac98d0/devanagari.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/ab5cf469-e78c-4791-92a2-a2e360e24c1d/latin-ext.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e4329016-2f24-4823-a4d0-2524756aabf8/latin-ext.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/30b17899-6fc2-43cf-83b2-ca5c666802df/latin.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/53d156bc-68d5-4d54-8c7e-29b8418f64b5/devanagari.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/106cf02d-1fea-47b3-beaa-607012f765b3/latin-ext.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/2200ecd2-8cab-4e5f-98a1-74a7a1427ea4/devanagari.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/abb8d202-34bc-4174-a25f-c00d4154bb44/latin.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/1e5ca8c8-e239-4a8d-9415-517c411c1f25/devanagari.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/00d1a230-e215-4217-b1cf-31145362801e/latin.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e7e7e312-9961-4208-abdd-6ed469c34828/latin-ext.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e5441b3f-475c-4dd0-815e-d1493a6eef24/latin-ext.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e364ec28-4783-442b-b46f-59d33a99dd2c/devanagari.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/67451c8f-d5ad-40d0-a48b-1e842ade5679/latin.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/7a2a42cb-3ddf-4c22-8ec2-e263cbab990a/latin.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/bb7271ab-ddab-4f75-92ca-30486930e59f/devanagari.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/24961341-1b80-47d9-b3b8-b1fe4124c9a1/latin-ext.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/26f34299-4a42-4ab5-bfb7-5bd4a602017d/latin.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/3fcf54ef-2a6a-44ab-ac6b-6049013913ea/latin-ext.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/59a0ac4b-73e3-4065-8317-9fa5c5d3dd6a/devanagari.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/ea875279-d663-4261-b690-7ed00c65ccb1/latin-ext.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/2f156972-5ae9-401b-8fd5-29a0fc4e4742/devanagari.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e1217d90-e3f1-4318-af30-972ddbb752f6/latin.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/95402d3d-cf4f-4ff3-b652-fa1bddbe79de/latin.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/31f2dfaf-de1e-40ab-ac18-8641e6ac98d0/devanagari.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/ab5cf469-e78c-4791-92a2-a2e360e24c1d/latin-ext.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e4329016-2f24-4823-a4d0-2524756aabf8/latin-ext.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/30b17899-6fc2-43cf-83b2-ca5c666802df/latin.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/53d156bc-68d5-4d54-8c7e-29b8418f64b5/devanagari.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/106cf02d-1fea-47b3-beaa-607012f765b3/latin-ext.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/2200ecd2-8cab-4e5f-98a1-74a7a1427ea4/devanagari.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: loaded. At least one source loaded; keep this face, do not substitute based on its self-hosted label. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/abb8d202-34bc-4174-a25f-c00d4154bb44/latin.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/1e5ca8c8-e239-4a8d-9415-517c411c1f25/devanagari.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/00d1a230-e215-4217-b1cf-31145362801e/latin.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e7e7e312-9961-4208-abdd-6ed469c34828/latin-ext.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e5441b3f-475c-4dd0-815e-d1493a6eef24/latin-ext.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/e364ec28-4783-442b-b46f-59d33a99dd2c/devanagari.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+/* Isolated-origin loading probe: unverified. Not confirmed, NOT a failed font. Try the captured loader before considering a substitute. */
+@font-face {
+  font-family: "Poppins";
+  src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/67451c8f-d5ad-40d0-a48b-1e842ade5679/latin.woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+:where(h1), .sp-type-headline-display {
+  font-family: orpheus-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}
+.sp-type-headline-lg {
+  font-family: orpheus-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}
+.sp-type-headline-md {
+  font-family: orpheus-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}
+:where(body), .sp-type-body-md {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}
+.sp-type-label-md {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+}
+:where(button, input, select, textarea), .sp-type-button {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}
+.sp-type-code {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: 100%;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-optical-sizing: auto;
+  font-synthesis: weight style small-caps;
+}

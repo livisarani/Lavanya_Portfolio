@@ -4,16 +4,11 @@ export default function FutureWork({ futureWork }: { futureWork?: string[] }) {
   if (!futureWork || futureWork.length === 0) return null;
 
   return (
-    <div className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
-      <div className="flex items-center gap-space-xs text-primary mb-space-sm">
-        <span className="material-symbols-outlined text-secondary">
-          rocket_launch
-        </span>
-        <h3 className="font-headline-sm text-headline-sm font-bold">
-          Future Horizon
-        </h3>
-      </div>
-      <ul className="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant list-disc pl-4">
+    <div className="p-8 border border-border bg-surface-elevated">
+      <h3 className="font-display text-[26px] text-foreground mb-4">
+        Future Horizon
+      </h3>
+      <ul className="space-y-3 text-[14px] leading-[25px] font-light text-foreground/80 list-disc pl-5">
         {futureWork.map((item, idx) => (
           <li key={idx}>{item}</li>
         ))}

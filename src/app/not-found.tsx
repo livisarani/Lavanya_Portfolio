@@ -3,26 +3,21 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="w-full py-space-3xl flex items-center justify-center">
-      <div className="max-w-lg mx-auto px-margin text-center">
-        <div className="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-semibold mb-space-md">
-          <span>404 / TELEMETRY NODE UNREACHABLE</span>
-        </div>
-        <h1 className="font-headline-lg text-headline-lg text-primary mb-space-sm">
-          Coordinate Not Found
+    <section className="w-full min-h-[75vh] pt-[86px] flex items-center justify-center bg-background">
+      <div className="max-w-lg mx-auto px-[23px] text-center">
+        <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+          404 / Page Not Found
+        </span>
+        <h1 className="font-display text-[48px] leading-[1.15] text-foreground mb-4">
+          Coordinate Not Found.
         </h1>
-        <p className="font-body-md text-body-md text-on-surface-variant mb-space-xl">
-          The requested architecture node or case study does not exist in the
-          active registry.
+        <p className="text-[15px] leading-[27px] font-light text-muted-foreground mb-10">
+          The requested project or case study does not exist in the active
+          registry.
         </p>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-lg bg-primary text-on-primary hover:bg-tertiary transition-colors font-label-lg text-label-lg"
-        >
-          <span className="material-symbols-outlined text-base">
-            arrow_back
-          </span>
-          <span>Return to Primary Substrate</span>
+        <Link href="/" className="btn-editorial-outline-sm">
+          <span aria-hidden="true">←</span>
+          <span>Return Home</span>
         </Link>
       </div>
     </section>

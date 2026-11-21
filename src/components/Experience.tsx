@@ -5,56 +5,62 @@ export default function Experience() {
   const { experience } = portfolioData;
 
   return (
-    <section className="w-full py-space-3xl bg-surface" id="experience">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+    <section
+      id="experience"
+      className="w-full bg-background py-24 md:py-32 border-b border-border"
+    >
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
         {/* Section Header */}
-        <div className="flex flex-col mb-space-2xl">
-          <div className="flex items-center gap-space-sm mb-space-xs">
-            <span className="h-px w-8 bg-secondary" />
-            <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-              {experience.sectionLabel}
-            </span>
-          </div>
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
-            {experience.headline}
+        <div className="max-w-3xl mb-16">
+          <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+            {experience.sectionLabel}
+          </span>
+          <h2 className="font-display text-[36px] md:text-[48px] leading-[1.15] text-foreground">
+            {experience.headline}.
           </h2>
         </div>
 
-        {/* Chronological Roadmap Timeline */}
-        <div className="space-y-space-xl relative">
+        {/* Hairline Chronological Rows */}
+        <div className="divide-y divide-border border-t border-b border-border">
           {experience.items.map((item) => (
             <div
               key={item.id}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+              className="py-10 md:py-12 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start hover:bg-surface-elevated/60 transition-colors duration-300 px-2 md:px-4"
             >
+              {/* Left Column: Period & Meta */}
               <div className="lg:col-span-3 flex flex-col">
-                <span className="font-headline-sm text-headline-sm text-secondary font-bold">
+                <span className="font-display text-[26px] text-primary leading-tight">
                   {item.period}
                 </span>
-                <span className="font-label-md text-label-md text-on-surface-variant">
+                <span className="text-[12px] uppercase tracking-[1.38px] text-muted-foreground mt-2">
                   {item.location}
                 </span>
-                <span className="font-label-sm text-label-sm text-primary-container font-semibold mt-1">
+                <span className="text-[11px] uppercase tracking-[1.44px] text-foreground/70 mt-1">
                   {item.type}
                 </span>
               </div>
 
-              <div className="lg:col-span-9 p-space-lg md:p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
-                <div className="flex flex-wrap items-center justify-between gap-space-xs mb-space-xs">
-                  <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
-                    {item.role} • {item.organization}
+              {/* Right Column: Role, Organization & Highlights */}
+              <div className="lg:col-span-9 flex flex-col">
+                <div className="flex flex-wrap items-baseline justify-between gap-3 mb-3">
+                  <h3 className="font-display text-[26px] md:text-[32px] leading-[1.25] text-foreground">
+                    {item.role}
                   </h3>
-                  <span className="px-space-sm py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm">
+                  <span className="px-3 py-1 border border-border text-[11px] uppercase tracking-[1.38px] text-primary">
                     {item.badge}
                   </span>
                 </div>
 
-                <p className="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+                <p className="text-[12px] uppercase tracking-[1.38px] text-muted-foreground mb-4">
+                  {item.organization}
+                </p>
+
+                <p className="text-[15.136px] leading-[27.24px] font-light text-foreground/85 mb-4 max-w-3xl">
                   {item.summary}
                 </p>
 
                 {item.highlights && item.highlights.length > 0 && (
-                  <ul className="space-y-1 font-body-sm text-body-sm text-on-surface-variant list-disc pl-4">
+                  <ul className="space-y-2 text-[14px] leading-[24px] font-light text-muted-foreground list-disc pl-5 max-w-3xl">
                     {item.highlights.map((bullet, idx) => (
                       <li key={idx}>{bullet}</li>
                     ))}

@@ -17,104 +17,101 @@ export default function Contact() {
 
   return (
     <section
-      className="w-full py-space-3xl bg-surface-container-low relative overflow-hidden"
       id="contact"
+      className="w-full bg-background py-24 md:py-32 relative overflow-hidden border-b border-border"
     >
-      {/* Subtle Oceanic Ambient Glow */}
-      <div className="pointer-events-none absolute -bottom-24 right-1/4 w-[480px] h-[480px] bg-secondary-fixed/25 blur-3xl rounded-full" />
+      {/* Subtle Warm Copper Editorial Glow */}
+      <div
+        className="pointer-events-none absolute -bottom-32 right-1/4 w-[520px] h-[520px] rounded-full opacity-20 blur-3xl"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(225,168,122,0.55) 0%, rgba(0,0,0,0) 70%)",
+        }}
+      />
 
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        <div className="rounded-2xl bg-surface-container-lowest p-space-xl md:p-space-3xl shadow-[0_20px_50px_rgba(6,59,99,0.08)] border border-surface-container">
-          {/* Header Block */}
-          <div className="max-w-3xl mb-space-2xl">
-            <div className="flex items-center gap-space-sm mb-space-sm">
-              <span className="h-px w-8 bg-secondary" />
-              <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-                {contact.sectionLabel}
-              </span>
+      <div className="relative z-10 max-w-content mx-auto px-[23px] md:px-[43px]">
+        {/* Header Block */}
+        <div className="max-w-3xl mb-16">
+          <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-4">
+            {contact.sectionLabel}
+          </span>
+          <h2 className="font-display text-[44px] md:text-[64px] leading-[1.1] text-foreground mb-5">
+            {contact.headline}.
+          </h2>
+          <p className="text-[16px] leading-[28.8px] font-light text-muted-foreground">
+            {contact.description}
+          </p>
+        </div>
+
+        {/* Two-Column Connect Layout: "Get in touch" (Left) & "Elsewhere" (Right) */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start pt-4">
+          {/* Left Column: Get in touch */}
+          <div className="md:col-span-6 flex flex-col items-start">
+            <span className="text-[12px] font-medium uppercase tracking-[1.38px] text-muted-foreground mb-4">
+              Get in touch
+            </span>
+
+            <div className="inline-flex flex-wrap items-center gap-3 border-b border-border hover:border-primary pb-2 transition-colors duration-300 group">
+              <a
+                href={`mailto:${identity.email}`}
+                className="font-display text-[24px] sm:text-[30px] md:text-[34px] text-foreground group-hover:text-primary transition-colors break-all"
+              >
+                {identity.email}
+              </a>
+
+              <button
+                type="button"
+                onClick={handleCopyEmail}
+                title="Copy email address"
+                className="p-2 border border-border hover:border-primary text-muted-foreground hover:text-primary transition-colors inline-flex items-center"
+              >
+                <span className="material-symbols-outlined text-base">
+                  {copied ? "check" : "content_copy"}
+                </span>
+              </button>
             </div>
 
-            <h2 className="font-display text-display-mobile md:text-headline-lg text-primary tracking-tight mb-space-sm">
-              {contact.headline}
-            </h2>
-
-            <p className="font-body-lg text-body-lg text-on-surface-variant">
-              {contact.description}
-            </p>
+            {copied && (
+              <span className="mt-3 text-[11.5px] uppercase tracking-[1.38px] text-primary font-medium">
+                Email copied to clipboard
+              </span>
+            )}
           </div>
 
-          {/* Two-Column Connect Layout: "Get in touch" (Left) & "Elsewhere" (Right) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-space-2xl items-start pt-space-md">
-            {/* Left Column: Get in touch */}
-            <div className="md:col-span-6 flex flex-col items-start">
-              <span className="font-label-md text-label-md text-on-surface-variant mb-space-sm">
-                Get in touch
-              </span>
+          {/* Right Column: Elsewhere */}
+          <div className="md:col-span-6 lg:col-span-5 flex flex-col">
+            <span className="text-[12px] font-medium uppercase tracking-[1.38px] text-muted-foreground mb-4">
+              Elsewhere
+            </span>
 
-              <div className="inline-flex flex-wrap items-center gap-space-sm border-b-2 border-primary/20 hover:border-secondary pb-2 transition-colors group">
-                <a
-                  href={`mailto:${identity.email}`}
-                  className="font-headline-sm md:font-headline-md text-lg sm:text-xl md:text-2xl text-primary font-bold group-hover:text-secondary transition-colors break-all"
-                >
-                  {identity.email}
-                </a>
-
-                <button
-                  type="button"
-                  onClick={handleCopyEmail}
-                  title="Copy email address"
-                  className="p-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-secondary-fixed/50 transition-colors inline-flex items-center"
-                >
-                  <span className="material-symbols-outlined text-base">
-                    {copied ? "check" : "content_copy"}
-                  </span>
-                </button>
-              </div>
-
-              {copied && (
-                <span className="mt-2 font-label-sm text-label-sm text-secondary font-semibold">
-                  Email copied to clipboard!
+            <div className="flex flex-col gap-4">
+              <a
+                href={identity.socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-7 py-5 bg-transparent hover:bg-primary border border-border hover:border-primary text-foreground hover:text-on-primary transition-all duration-200 flex items-center justify-between group"
+              >
+                <span className="text-[12px] font-medium uppercase tracking-[1.44px]">
+                  LinkedIn
                 </span>
-              )}
-            </div>
+                <span className="material-symbols-outlined text-lg text-primary group-hover:text-on-primary transition-colors">
+                  open_in_new
+                </span>
+              </a>
 
-            {/* Right Column: Elsewhere */}
-            <div className="md:col-span-6 lg:col-span-5 flex flex-col">
-              <span className="font-label-md text-label-md text-on-surface-variant mb-space-sm">
-                Elsewhere
-              </span>
-
-              <div className="flex flex-col gap-space-sm">
-                {/* LinkedIn Card */}
-                <a
-                  href={identity.socials.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full px-space-lg py-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all flex items-center justify-between group shadow-xs"
-                >
-                  <span className="font-body-md text-body-md text-primary font-semibold group-hover:text-secondary transition-colors">
-                    LinkedIn
-                  </span>
-                  <span className="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-lg">
-                    open_in_new
-                  </span>
-                </a>
-
-                {/* GitHub Card */}
-                <a
-                  href={identity.socials.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full px-space-lg py-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all flex items-center justify-between group shadow-xs"
-                >
-                  <span className="font-body-md text-body-md text-primary font-semibold group-hover:text-secondary transition-colors">
-                    GitHub
-                  </span>
-                  <span className="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-lg">
-                    open_in_new
-                  </span>
-                </a>
-              </div>
+              <a
+                href={identity.socials.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-7 py-5 bg-transparent hover:bg-primary border border-border hover:border-primary text-foreground hover:text-on-primary transition-all duration-200 flex items-center justify-between group"
+              >
+                <span className="text-[12px] font-medium uppercase tracking-[1.44px]">
+                  GitHub
+                </span>
+                <span className="material-symbols-outlined text-lg text-primary group-hover:text-on-primary transition-colors">
+                  open_in_new
+                </span>
+              </a>
             </div>
           </div>
         </div>

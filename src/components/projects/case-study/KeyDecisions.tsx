@@ -9,30 +9,29 @@ export default function KeyDecisions({
   if (!decisions || decisions.length === 0) return null;
 
   return (
-    <section className="w-full py-space-2xl bg-surface-container-lowest border-b border-surface-container">
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
-        <div className="flex items-center gap-space-sm mb-space-md">
-          <span className="h-px w-8 bg-secondary" />
-          <span className="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">
-            05 / Key Engineering Decisions
-          </span>
-        </div>
+    <section className="w-full py-20 border-b border-border bg-surface-elevated">
+      <div className="max-w-content mx-auto px-[23px] md:px-[43px]">
+        <span className="block text-[12px] font-medium uppercase tracking-[1.44px] text-primary mb-8">
+          05 / Key Engineering Decisions
+        </span>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {decisions.map((item, idx) => (
             <div
               key={idx}
-              className="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm"
+              className="p-8 border border-border bg-background flex flex-col gap-3"
             >
-              <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
+              <h3 className="font-display text-[24px] text-foreground">
                 {item.decision}
               </h3>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
-                <strong className="text-primary">Rationale:</strong>{" "}
+              <p className="text-[14px] leading-[25px] font-light text-foreground/80">
+                <strong className="text-foreground font-medium">
+                  Rationale:
+                </strong>{" "}
                 {item.rationale}
               </p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
-                <strong className="text-secondary">Trade-off:</strong>{" "}
+              <p className="text-[14px] leading-[25px] font-light text-muted-foreground">
+                <strong className="text-primary font-medium">Trade-off:</strong>{" "}
                 {item.tradeOff}
               </p>
             </div>
